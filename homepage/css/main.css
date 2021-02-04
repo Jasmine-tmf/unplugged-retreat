@@ -96,6 +96,7 @@ textarea {
      font-size: 1em;
      font-family: 'Open Sans', sans-serif;
      text-align: left;
+     color: #e2e3ed;
    }
 
    ul,
@@ -110,6 +111,7 @@ textarea {
 
    h2 {
      font-family: 'Poppins', sans-serif;
+     font-weight: 500;
      font-size: 1.875em;
    }
 
@@ -117,12 +119,21 @@ textarea {
    h4 {
      font-family: 'Poppins', sans-serif;
      margin: 20px 0;
+     font-weight: 500;
      font-size: 1.125em;
    }
 
    p {
      font-size: .875em;
      line-height: 1.285;
+   }
+
+   img {
+    width: 100%;
+   }
+
+   figure {
+    margin: 0;
    }
 
    address {
@@ -142,6 +153,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     background-color: #202322;
    }
 
    header {
@@ -156,10 +168,19 @@ textarea {
      margin: 0;
    }
 
+   header figure {
+     width: 60%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
    .header-divider {
      width: 100%;
      height: 1px;
      margin: 10px 0 20px 0;
+     background: #3a3a3a;
    }
 
    header nav {
@@ -168,6 +189,9 @@ textarea {
      align-items: center;
      flex-flow: row wrap;
      width: 60%;
+     font-size: 1.125em;
+     font-weight: 700;
+     text-transform: uppercase;
    }
 
    header nav ul {
@@ -176,7 +200,12 @@ textarea {
      width: 100%;
    }
 
+   header nav ul li {
+     font-size: 1.125em;
+   }
+
    footer {
+     text-align: center;
      flex-direction: column;
    }
 
@@ -214,14 +243,26 @@ textarea {
    /* Hero Area */
 
    .hero-area {
+     background: url(../img/unplugged-retreat.jpg);
+     background-size: cover;
+     background-position: center;
+     min-height: 500px;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
    }
 
+   .hero-area h1 {
+     font-size: 2.25em;
+     font-family: 'Poppins', Helvetica, Arial, sans-serif;
+     font-weight: 500;
+     line-height: 1.2;
+   }
+
    /* Aside */
 
    aside {
+     background-color: #527158;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -257,6 +298,9 @@ textarea {
    /* Features */
 
    .features {
+     background: url('../img/unplugged-retreat-features.jpg');
+     background-size: cover;
+     background-position: center;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
@@ -285,6 +329,7 @@ textarea {
    /* Reviews */
 
    .reviews {
+     background-color: #2a423a;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
@@ -304,6 +349,7 @@ textarea {
       ========================================================================== */
 
    .mission {
+     background-color: #527158;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -311,6 +357,7 @@ textarea {
    }
 
    .contact-section {
+     ackground-color: #2a423a;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -326,6 +373,7 @@ textarea {
       ========================================================================== */
 
    .faq {
+     background-color: #527158;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -342,6 +390,7 @@ textarea {
 
    .faq h2 {
      margin-bottom: 40px;
+     line-height: 1;
    }
 
    .faq-content {
@@ -486,6 +535,11 @@ textarea {
       display: none;
     }
     /* Hero Area */
+
+    .hero-area {
+      min-height: 600px;
+    }
+
     .hero-area h1 {
       font-size: 3em;
       line-height: 1;
@@ -533,6 +587,7 @@ textarea {
       width: 85%;
     }
 
+    .reviews article figure,
     .reviews article div {
       width: 49%;
     }
@@ -548,10 +603,11 @@ textarea {
       margin: 100px 0;
     }
 
-    .footer-content {
+    footer .footer-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-direction: row;
     }
 
     footer .contact {
@@ -679,6 +735,10 @@ textarea {
   }
 
   /* Reviews */
+
+  .reviews article div {
+    width: 42%;
+  }
 
   .reviews h2 {
     padding-bottom: 50px;
